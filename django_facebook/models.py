@@ -52,7 +52,7 @@ Its recommended to enable FACEBOOK_CELERY_STORE or disable FACEBOOK_STORE_FRIEND
             logger.warn(msg)
 
     # make sure the context processors are present
-    required = ['django_facebook.context_processors.facebook',
+    required = [  # 'django_facebook.context_processors.facebook',
                 'django.template.context_processors.request']
     context_processors = settings.TEMPLATES[0]['OPTIONS']['context_processors']
     for context_processor in required:
